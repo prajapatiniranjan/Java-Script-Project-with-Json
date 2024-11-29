@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">dashboard</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Tasks</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="dashboard-container">
+        <!-- Welcome Section -->
+        <section class="welcome">
+            <h1>Welcome, User!</h1>
+            <p>You logged in at 00:00 AM</p>
+        </section>
+
+        <!-- Notifications Section -->
+        <section class="notifications">
+            <h2>Notifications</h2>
+            <ul>
+                <li>New message from Niranjan</li>
+                <li>Your task "Update Profile" is overdue</li>
+                <li>System update scheduled for 5:00 PM</li>
+            </ul>
+        </section>
+
+        <!-- User Profile Section -->
+        <section class="user-profile">
+            <h2>User Profile</h2>
+            <div class="profile-card">
+                <img id="profileImage" src="user-avatar.jpg" alt="User Avatar" class="profile-avatar">
+                <h3 id="profileName">[User Name]</h3>
+                <p id="profileEmail">Email: user@example.com</p>
+
+                <!-- Edit Profile Button -->
+                <button class="action-btn" id="editProfileButton">Edit Profile</button>
+            </div>
+        </section>
+
+        <!-- Edit Profile Form (Hidden by Default) -->
+        <section class="edit-profile-form" style="display: none;">
+            <h2>Edit Profile</h2>
+            <form id="updateProfileForm">
+                <div class="form-group">
+                    <label for="newName">Name</label>
+                    <input type="text" id="newName" name="name" placeholder="Enter new name" required>
+                </div>
+                <div class="form-group">
+                    <label for="newEmail">Email</label>
+                    <input type="email" id="newEmail" name="email" placeholder="Enter new email" required>
+                </div>
+                <div class="form-group">
+                    <label for="newImage">Profile Picture</label>
+                    <input type="file" id="newImage" name="profilePicture">
+                    <img id="imagePreview" src="user-avatar.jpg" alt="Profile Image Preview" class="image-preview">
+                </div>
+                <button type="submit" class="btn">Update Profile</button>
+                <button class="delete-btn" id="deleteAccountButton">Delete Account</button>
+
+
+            </form>
+
+        </section>
+
+
+        <!-- Analytics Section -->
+        <section class="analytics">
+            <h2>Analytics</h2>
+            <canvas id="analyticsChart"></canvas>
+        </section>
+
+        <!-- Recent Activity -->
+        <section class="recent-activity">
+            <h2>Recent Activity</h2>
+            <ul>
+                <li>You logged in at 10:30 AM</li>
+                <li>Profile updated</li>
+                <li>Uploaded *project.docx*</li>
+                <li>Completed task "Prepare Presentation"</li>
+            </ul>
+        </section>
+
+        <!-- Tasks Section -->
+        <section class="tasks">
+            <h2>Tasks</h2>
+            <ul class="task-list">
+                <li>
+                    <span>Complete the monthly report</span>
+                    <button class="task-btn">Mark as Done</button>
+                </li>
+                <li>
+                    <span>Prepare for team meeting</span>
+                    <button class="task-btn">Mark as Done</button>
+                </li>
+                <li>
+                    <span>Update website content</span>
+                    <button class="task-btn">Mark as Done</button>
+                </li>
+            </ul>
+            <button class="action-btn">Add New Task</button>
+        </section>
+
+        <!-- News Section -->
+        <section class="news">
+            <h2>Latest News</h2>
+            <div class="news-item">
+                <h3>Team Outing Scheduled</h3>
+                <p>Our next team outing is scheduled for 15th March. Don't forget to RSVP!</p>
+            </div>
+            <div class="news-item">
+                <h3>New Feature Launch</h3>
+                <p>We’ve launched a new feature for enhanced analytics. Check it out in the Analytics tab!</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Enhanced dashboard. All rights reserved.</p>
+        <p>Contact: support@dashboard.com</p>
+    </footer>
+
+    <script src="/dashborad.js"></script>
+</body>
+
+</html>

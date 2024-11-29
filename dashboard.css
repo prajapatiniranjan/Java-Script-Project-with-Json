@@ -1,0 +1,230 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #f3f4f6, #e9ecef);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #000000a9, #0056b3);
+  color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: #ffcc00;
+}
+
+/* dashboard Container */
+.dashboard-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+}
+
+/* Welcome Section */
+.welcome {
+  background: linear-gradient(135deg, #000000a9, #0056b3);
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.welcome p {
+  font-size: 1.2rem;
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Notifications and Activity */
+.notifications ul,
+.recent-activity ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.notifications li,
+.recent-activity li {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.notifications li:last-child,
+.recent-activity li:last-child {
+  border-bottom: none;
+}
+
+.notifications li:hover,
+.recent-activity li:hover {
+  background: #f9f9f9;
+  cursor: pointer;
+}
+
+/* Profile Card */
+.user-profile .profile-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: linear-gradient(135deg, #f3f4f6, #ffffff);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #000000a9;
+}
+
+.action-btn {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: #000000a9;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.action-btn:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Tasks Section */
+.tasks .task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.tasks .task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.tasks .task-list li:last-child {
+  border-bottom: none;
+}
+
+.task-btn {
+  padding: 0.3rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background: #ffcc00;
+  color: #333;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.task-btn:hover {
+  background: #e0ac00;
+}
+
+/* Analytics Chart */
+.analytics canvas {
+  margin-top: 1rem;
+  width: 100%;
+  max-height: 400px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* News Section */
+.news .news-item {
+  margin-bottom: 1.5rem;
+}
+
+.news .news-item h3 {
+  font-size: 1.2rem;
+  color: #000000a9;
+}
+
+.news .news-item p {
+  font-size: 1rem;
+  color: #666;
+}
+.delete-btn {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #000000a9;
+  color: white;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}

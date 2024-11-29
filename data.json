@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": "9d9c",
+      "name": "Niranjan Prajapati",
+      "email": "prajapatiniranjan8@gmail.com",
+      "password": "nnnnnn"
+    },
+    {
+      "id": "3375",
+      "name": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "babb",
+      "name": "Mr.Max Prajapati",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "46b8",
+      "name": "Ram",
+      "email": "jhuh@gmail.com",
+      "password": "1111"
+    },
+    {
+      "id": "5ab9",
+      "name": "Anshul",
+      "email": "prajapatiniranjan8@gmail.com",
+      "password": "nnnnnn"
+    },
+    {
+      "id": "8c9f",
+      "name": "Anshul Shivhare",
+      "email": "jfhweeef@gmail.com",
+      "password": "nnnnnn"
+    },
+    {
+      "id": "715f",
+      "name": "Bansant Bhadu",
+      "email": "basantbhadu@gmail.com",
+      "password": "111111"
+    }
+  ]
+}
